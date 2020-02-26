@@ -1,0 +1,65 @@
+::-moz-selection {
+    background-color: rgba(255,255,255,0.10);
+}
+
+::selection {
+    background-color: rgba(255,255,255,0.10);
+}
+
+body {
+    background-color: #070707;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+    background-color: rgba(255,255,255,0.036);
+    display: inline-block;
+    min-width: 300px;
+    position: absolute;
+    padding: 8px 16px;
+    text-align: center;
+    color: rgb(175, 173, 169);
+    box-shadow: 0 0 4px 3px rgba(0,0,0,0.656);
+    border: 4px solid;
+    border-image: linear-gradient(45deg, rgb(49, 158, 71), rgb(53, 99, 148)) 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+button {
+    background-color: rgba(255,255,255,0.036);
+    color:rgb(175, 173, 169);
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgb(53, 99, 148);
+    border-bottom: 1px solid rgb(53, 99, 148);
+    color: rgb(53, 99, 148);
+    outline: none;
+    transition: background-color 0.12s linear;
+    cursor: pointer;
+}
+
+button:focus,
+button:hover,
+button:active {
+    background-color: rgba(255,255,255,0.056);
+    border-color: rgb(82, 125, 172);
+    color: rgb(82, 125, 172);
+}
+
+input[type="text"] {
+    background-color: rgba(255,255,255,0.008);
+    text-align: center;
+    padding: 3px 0 3px 0;
+    border: 0;
+    border-bottom: 1px solid rgb(49, 158, 71);
+    color: rgb(49, 158, 71);
+    font-weight: bold;
+    box-shadow: 0 4px 4px 3px rgba(0,0,0,0.356);
+}
+
