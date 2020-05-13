@@ -24,7 +24,6 @@ body {
   filter: blur(1px) brightness(50%);
   transform: scale(1.1);
   z-index: -1;
-
 }
 
 #information {
@@ -97,4 +96,46 @@ a:focus {
   border: 0;
   white-space: pre-line;
   color: rgba(255, 255, 255, 0.6);
-} 
+}
+
+@media only screen and (max-width: 600px) {
+    a[download]::before,
+.name::before {
+  content: '';
+  opacity: inherit;
+}
+
+#information img {
+  width: 14px;
+  display: none;
+}
+  footer {
+    width: 100%;
+    padding: 0;
+  }
+    #information {
+  min-width: 65vw;
+}
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 1366px) {
+
+  body {
+  font-size: 28px;
+}
+
+}
+
+@media only screen and (max-width: 360px) {
+
+  #information {
+  padding: 0rem 1rem;
+  max-width: 85%;
+}
+
+  footer {
+    width: 100%;
+    padding: 0;
+  }
+
+}
