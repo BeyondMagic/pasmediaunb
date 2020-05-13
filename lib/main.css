@@ -30,9 +30,8 @@ body {
 #information {
   background-color: rgba(255,255,255,0.036);
   display: inline-block;
-  min-width: 300px;
   position: absolute;
-  padding: 8px 16px;
+  padding: 1rem 4rem;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -46,6 +45,14 @@ body {
 
 h1 {
   font-size: 24px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100vw;
+  padding: 0 1rem;
 }
 
 .anos {
@@ -71,15 +78,15 @@ a[download]::before,
   color: white;
 }
 
-a[download] {
+a {
   text-decoration: none;
   color: white;
 }
 
 .anos:focus,
 .anos:hover,
-a[download]:hover,
-a[download]:focus {
+a:hover,
+a:focus {
   font-style: italic;
 }
 
