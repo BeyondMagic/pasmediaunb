@@ -1,23 +1,36 @@
 <!doctype html>
 <html>
 	<head>
-		<title>PAS | Redação Media Aritmetica</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap" rel="stylesheet">
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="calculator.js"></script>
-		<link rel="stylesheet" type="text/css" href="main.css">
+		<title>PAS UnB | Média Aritmética</title>
+		<script defer src="./lib/information.js"></script>
+		<link rel="stylesheet" type="text/css" href="./lib/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-		<body>
-			<div class="calculator">
-				<h1>Média aritmética da redação do PAS</h1>
-				<!-- Ano PAS -->
-				<div class="ano_pas">
-					<button class="p2019">Provisório 2019</button>
+	<body onload="start()">
+		<section id="background"></section>
+      <!-- todas as notas foram calculadas à parte usando regexp -->
+			<div id="information">
+				<div class="anoPas">
+          <img src="./lib/pdfs/pdf.svg"><span class="anos" onclick="arquivos()">Arquivos</span>
+          <br>
+					<img src="./lib/pdfs/search.svg"><span class="anos" onclick="p2019()">Provisório 2019</span>
+          <br>
+					<img src="./lib/pdfs/heart.svg"><span class="anos" onclick="d2019()">Definitivo 2019</span>
+					<!--
+          <br>
+					<img src="./lib/pdfs/search.svg"><span class="anos" onclick="p2020()">Provisório 2020</span>
+          <br>
+					<img src="./lib/pdfs/heart.svg"><span class="anos" onclick="p2020()">Definitivo 2020</span>
+          <br>
+					<img src="./lib/pdfs/search.svg"><span class="anos" onclick="p2021()">Provisório 2021</span>
+          <br>
+					<img src="./lib/pdfs/heart.svg"><span class="anos" onclick="p2021()">Definitivo 2021</span>
+					-->
 				</div>
-				<!-- Resultado -->
-				<form class="resultado_ano">
-					<h2>Resultado:</h2>
-					<input class="resultado" type="text" disabled name="resultado">
+				<form class="resultadoAno">
+					<h4>PAS 2019-2021</h4>
+					<span id="resultado"></span>
 				</form>
 			</div>
 	</body>

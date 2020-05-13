@@ -1,0 +1,93 @@
+::-moz-selection {
+  background-color: rgba(255,255,255,0.10);
+}
+
+::selection {
+  background-color: rgba(255,255,255,0.10);
+}
+
+body {
+  color: white;
+  overflow: hidden;
+  font-family: 'Jost', sans-serif;
+}
+
+#background {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./1.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px) brightness(50%);
+  transform: scale(1.1);
+  z-index: -1;
+
+}
+
+#information {
+  background-color: rgba(255,255,255,0.036);
+  display: inline-block;
+  min-width: 300px;
+  position: absolute;
+  padding: 8px 16px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#information img {
+  width: 14px;
+  margin-right: 6px;
+  filter: invert(100%) sepia(96%) saturate(0%) hue-rotate(84deg) brightness(106%) contrast(103%);
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.anos {
+  color: rgb(175, 173, 169);
+  width: 100%;
+  border: 0;
+  color: white;
+  opacity: 0.8;
+  outline: none;
+  transition: background-color 0.12s linear;
+  cursor: pointer;
+  user-select: none;
+}
+
+a[download]::before,
+.name::before {
+  content: '├ ';
+  opacity: 0.6;
+}
+
+.inf,
+.name {
+  color: white;
+}
+
+a[download] {
+  text-decoration: none;
+  color: white;
+}
+
+.anos:focus,
+.anos:hover,
+a[download]:hover,
+a[download]:focus {
+  font-style: italic;
+}
+
+#resultado {
+  background-color: rgba(255, 255, 255, 0.008);
+  text-align: center;
+  padding: 3px 0 3px 0;
+  border: 0;
+  white-space: pre-line;
+  color: rgba(255, 255, 255, 0.6);
+} 
