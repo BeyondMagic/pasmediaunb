@@ -28,6 +28,8 @@ body {
 
 #information {
   background-color: rgba(255,255,255,0.036);
+  box-shadow: 2px 1px 3px rgba(0,0,0,0.5);
+  border: 2px solid white;
   display: inline-block;
   position: absolute;
   padding: 1rem 4rem;
