@@ -21,7 +21,7 @@ body {
   background-image: url("./1.jpg");
   background-size: cover;
   background-position: center;
-  filter: blur(1px) brightness(50%);
+  filter: blur(4px) brightness(50%);
   transform: scale(1.1);
   z-index: -1;
 }
